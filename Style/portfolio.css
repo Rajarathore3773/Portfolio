@@ -248,6 +248,8 @@ nav ul li a{
 .wrapper{
   display: flex;
   flex-direction: column;
+  height: 100%;
+  overflow: auto;
 }
 .sidebar1{
   width: 100%;
@@ -256,3 +258,13 @@ nav ul li a{
   width: 100%;
 }
 }
+
+@media screen and (max-width: 450px){
+.container{
+  margin-top: 90px;
+}
+
+}
+
+
+
