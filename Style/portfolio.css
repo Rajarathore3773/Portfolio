@@ -1,0 +1,258 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  background-color:#e1e6ee00;
+  /* overflow: hidden; */
+}
+body{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_DbY_PwiU2rMxfc7HwIJdFQnDZDr4FjtGyg&usqp=CAU);
+  width: 100%;
+  height: 100%;
+  /* background-repeat:repeat-y  ; */
+}
+
+/* work for sidebar 2 links */
+a.four {
+  background-image: linear-gradient(
+    to right,
+    #54b3d6,
+    #54b3d6 50%,
+    #000 50%
+  );
+  /* background-image: linear-gradient(
+    to right,
+    red 20%,
+    orange 20% 40%,
+    /* yellow 40% 60%, */
+    green 60% 80%,
+    blue 80%,
+    black 60%
+  ); */
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text; 
+   -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+a.four:before {
+  content: '';
+  /* background: #54b3d6; */
+  background: linear-gradient(
+    to left,
+    red 20%,
+    orange 20% 40%,
+    /* yellow 40% 60%, */
+    green 60% 80%,
+    blue 80%,
+    black 60%
+  );
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+a.four:hover {
+ background-position: 0;
+}
+
+a.four:hover::before {
+  width:100%;
+}
+
+nav ul li a{
+  display: flex;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 5px;
+  /* margin: 5px; */
+  padding: 5px;
+ }
+ 
+ /* Work for sidebar1 link */
+ .social-links{
+  display: flex;
+  padding-left: 8px!important;
+ }
+ .social-links a{
+    width: 22px !important;
+    height: 25px !important;
+    text-decoration: none !important;
+    color: #000;
+    box-shadow: 0 0 -10px -10px rgba(0, 0, 0, 0.1);
+    margin: 0 5px;
+    border-radius: 5%;
+    position: relative;
+    overflow: hidden;
+ }
+ .social-links a .icon{
+   font-size: 22px;
+   line-height: 5px;
+   position: relative;
+   z-index: 1;
+   transition: color 0.5s;
+   
+ }
+
+ .social-links a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -50px;
+    left: 0;
+    /* background: linear-gradient(-45deg, #ed1c93,#ffec17); */
+    background: linear-gradient(
+      to right,
+      red 20%,
+      orange 20% 40%,
+      yellow 40% 60%,
+      green 60% 80%,
+      blue 80%
+    );
+    /* background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%); */
+    position: absolute;
+    transition: 0.2s;
+ }
+
+
+ .social-links a:hover::after{
+  /* background-color: #e5cd12; */
+  top: 0;
+
+ }
+
+ social-links a:hover .icon{
+  color: #fff;
+ }
+
+ .wrapper {
+  /* background-image: #e5cd12;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  margin-left: 5px; */
+  /* overflow: hidden; */
+
+  border: 1px solid #fff;
+    padding: 20px;
+ }
+
+ .sidebar1{
+    margin-top: 30px;
+    width: 20%;
+    /* height: 100px; */
+    float: left;
+    background-color: #e5cd12;
+    /* padding: 20px; */
+    /* border: 2px solid red; */
+    /* overflow: scroll; */
+
+ }
+
+ .sidebar2{
+  width: 80%;
+  /* height: 100%; */
+  float: left;
+  padding: 10px;
+  /* border: 2px solid red; */
+  overflow: auto;
+  height: 100vh;
+
+ }
+
+
+
+ /* .wrapper .sidebar{
+  background: rgb(5, 68, 104);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 225px;
+  height: 100%;
+  padding: 20px 0;
+  transition: all 0.5s ease;
+}
+
+.wrapper .sidebar .profile img{
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+} */
+
+
+
+/* Css for contact div */
+ .phone  {
+  width: 138px!important;
+  height: 40px!important;
+  
+ }
+ .email {
+  width: 282px!important;
+  height: 40px!important;
+
+  /* margin-left: 5px; */
+ }
+ .location{
+  width: 115px!important;
+  height: 40px!important;
+
+
+ }
+
+ .contact1 {
+  background-color: darkgray;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  border-radius: 7px;
+  margin-left: 5px;
+
+ }
+
+ /* Css For Education div */
+ .container{
+    box-shadow: -1px 2px 18px darkgrey;
+    margin: -3px;
+    padding-left: 13px;
+    /* padding-bottom: 2px; */
+}
+ .clg #year1{
+  padding-left: 80px;
+ }
+ .clg #year2{
+  padding-left: 53px;
+ }
+
+ .clg #year3{
+  padding-left: 92px;
+ }
+
+ /* Css For Experience */
+ .container1{
+  box-shadow: -1px 2px 18px darkgrey;
+  margin: -3px;
+  padding-left: 13px;
+  /* padding-bottom: 2px; */
+}
+@media screen and (max-width: 920px){
+.wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.sidebar1{
+  width: 100%;
+}
+.sidebar2{
+  width: 100%;
+}
+}
